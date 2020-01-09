@@ -1,9 +1,9 @@
-.main {
+.t1-main {
     font-family: 'Open Sans', sans-serif;
     width: 100%;
 }
 
-.title {
+.t1-title {
     width: 100%;
     text-align: center;
     color: white;
@@ -11,7 +11,7 @@
     margin: 0;
 }
 
-.topbar {
+.t1-topbar {
     display: flex;
     align-items: center;
     height: 200px;
@@ -20,7 +20,7 @@
     z-index: -1;
 }
 
-form {
+.t1-form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;

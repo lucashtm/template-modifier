@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/computed-style-to-inline-style"></script>
+    <title>Template Modifier</title>
+</head>
+<body>
+    <button id="clipboard">Copy to Clipboard</button>
+    <input type="text" id="html-text">
+    <div class="template" id="template">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <div class="topbar mutable background-color">
+            <h1 class="title mutable text color">Title</h1>
+        </div>
+    </div>
+    <div class="edit-panel" id="edit-panel">
+        <div class="text-field" id="text-field">
+            <span>Text:</span>
+            <input type="text" name="text-data" id="text-field-input">
+        </div>
+        <div class="color-picker" id="color-picker">
+            <span>Color:</span>
+            <input type="color" name="" id="color-picker-input" value="#FF0000">
+        </div>
+        <div class="background-color-picker" id="background-color-picker">
+            <span>Background Color:</span>
+            <input type="color" name="" id="background-color-picker-input" value="#FF0000">
+        </div>
+        <button id="apply-edit">Apply</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

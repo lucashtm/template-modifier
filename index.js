@@ -1,3 +1,10 @@
+let templates = [
+    'template_1/index.html',
+    'template_2/index.html'
+];
+
+buildTemplateSelect();
+
 let editPanel = $('#edit-panel');
 
 // Hide edit panel and its children
@@ -5,6 +12,11 @@ editPanel.hide();
 $('#text-field').hide();
 $('#color-picker').hide();
 $('#background-color-picker').hide();
+$('#form-action').hide();
+
+document.getElementById('load-template').onclick = function(){
+    $('#template').load(document.getElementById('templates').value);
+}
 
 // On click function to copy template content to clipboard
 document.getElementById('clipboard').onclick = function(){
@@ -12,7 +24,7 @@ document.getElementById('clipboard').onclick = function(){
         recursive: true
     });
     hiddenInput = document.getElementById('html-text');
-    hiddenInput.value = document.getElementById('template').outerHTML;
+    hiddenInput.value = document.getElementById('template').innerHTML;
     console.log(hiddenInput.select());
     document.execCommand("copy");
 }
@@ -27,6 +39,9 @@ document.getElementById('apply-edit').onclick = function(){
     }
     if($(selectedElement).hasClass('background-color')){
         $(selectedElement).css('background-color', document.getElementById('background-color-picker-input').value);
+    }
+    if($(selectedElement).hasClass('url')){
+        selectedElement.action = document.getElementById('form-action-input').value;
     }
 }
 
@@ -73,6 +88,11 @@ function showEditPanel(el) {
     }else{
         $('#background-color-picker').hide();
     }
+    if($(el).hasClass('url')){
+        $('#form-action').show();
+    }else{
+        $('#form-action').hide();
+    }
 }
 
 function hideEditPanel() {
@@ -84,4 +104,10 @@ function forbbidenElement(el){
     editElement = editPanel.has(el).length || $(el).hasClass('edit-panel');
     pageElement = $(el).is('html') || $(el).is('body');
     return editElement || pageElement;
+}
+
+function buildTemplateSelect(){
+    for(i=0;i<templates.length;i++){
+        document.getElementById('templates').innerHTML += `<option value="${templates[i]}">${templates[i]}</option>`;
+    }
 }

@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="template_1/style.css">
+    <link rel="stylesheet" href="template_2/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/computed-style-to-inline-style"></script>
     <title>Template Modifier</title>
 </head>
 <body>
-    <button id="clipboard">Copy to Clipboard</button>
+    <select name="templates" id="templates"></select>
+    <button id="load-template">Load Template</button>
     <input type="text" id="html-text">
+    <button id="clipboard">Copy to Clipboard</button>
     <div class="template" id="template">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-        <div class="topbar mutable background-color">
-            <h1 class="title mutable text color">Title</h1>
-        </div>
     </div>
     <div class="edit-panel" id="edit-panel">
         <div class="text-field" id="text-field">
@@ -31,6 +31,10 @@
         <div class="background-color-picker" id="background-color-picker">
             <span>Background Color:</span>
             <input type="color" name="" id="background-color-picker-input" value="#FF0000">
+        </div>
+        <div class="form-action" id="form-action">
+            <span>Form URL:</span>
+            <input type="text" name="text-data" id="form-action-input">
         </div>
         <button id="apply-edit">Apply</button>
     </div>

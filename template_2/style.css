@@ -1,0 +1,35 @@
+.main {
+    display: flex;
+    height: 600px;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    background-color: black;
+}
+
+.title {
+    margin: 0;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}

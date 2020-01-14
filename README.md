@@ -12,15 +12,20 @@ Create templates and edit them from browser
 
 - `brew install sassc`
 
-## Create new Template
+## Instalation
 
 - Fork this project
 - Clone forked repository to your machine
-- Create new directory inside `templates/` folder
-- Inside your newly created directory, create `index.html` and `style.scss` files for your layout
-- Code your template on those files
+- cd into project folder
+- Run `chmod +x build`
+- Run `chmod +x create_template`
+
+## Create new Template
+
+- Run `./create_template your_template_name`
+- Code your template in the files created inside `templates/your_template_name` folder
 - Run `./build` on root folder
-- `git add templates/style.css templates/your_template/style.css`
+- `git add templates/index.js templates/style.css templates/your_template/style.css`
 - `git commit -m "New template"`
 - `git push`
 

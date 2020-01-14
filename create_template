@@ -1,0 +1,3 @@
+mkdir templates/$1
+touch templates/$1/index.html
+touch templates/$1/style.scss

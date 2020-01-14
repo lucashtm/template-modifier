@@ -1,9 +1,14 @@
 #!/bin/bash
 
 main_css=""
+main_js="const templates = [\n"
 for dir in templates/*/
 do
   sassc ${dir}style.scss > ${dir}style.css
   main_css="$main_css@import url(\"`basename ${dir}`/style.css\");\n"
+  main_js="$main_js  \"${dir}\",\n"
 done
+main_js="$main_js\n]\n"
+
 printf "$main_css" > templates/style.css
+printf "$main_js" > templates/index.js

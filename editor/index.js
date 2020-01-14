@@ -1,8 +1,3 @@
-let templates = [
-    'templates/t1/index.html',
-    'templates/t2/index.html'
-];
-
 buildTemplateSelect();
 
 let editPanel = $('#edit-panel');

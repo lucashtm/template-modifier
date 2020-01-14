@@ -1,6 +1,6 @@
 let templates = [
-    'template_1/index.html',
-    'template_2/index.html'
+    'templates/t1/index.html',
+    'templates/t2/index.html'
 ];
 
 buildTemplateSelect();

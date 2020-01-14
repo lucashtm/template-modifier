@@ -1,0 +1,50 @@
+.t2 {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    height: 600px;
+    
+    .sidebar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 50%;
+        background-color: black;
+    }
+    
+    .title {
+        width: 100%;
+        color: white;
+        font-size: 72px;
+        margin: 0;
+        text-align: right;
+        padding-right: 30px;
+    }
+    
+    .form-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 400px;
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .form div {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    
+    .form > div > input {
+        width: 300px;
+        height: 30px;
+    }
+}

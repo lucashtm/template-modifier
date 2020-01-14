@@ -1,0 +1,23 @@
+.t1 {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%; }
+  .t1 .title {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 72px;
+    margin: 0; }
+  .t1 .topbar {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    z-index: -1; }
+  .t1 .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 40%;
+    margin-top: 25px;
+    text-align: center; }

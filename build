@@ -1,0 +1,9 @@
+#!/bin/bash
+
+main_css=""
+for dir in templates/*/
+do
+  sassc ${dir}style.scss > ${dir}style.css
+  main_css="$main_css@import url(\"`basename ${dir}`/style.css\");\n"
+done
+printf "$main_css" > templates/style.css

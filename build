@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sassc editor/style.scss > editor/style.css
 main_css=""
 main_js="const templates = [\n"
 for dir in templates/*/

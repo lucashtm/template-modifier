@@ -7,18 +7,24 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="editor/style.css">
     <link rel="stylesheet" href="templates/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/computed-style-to-inline-style"></script>
     <script src="templates/index.js"></script>
     <title>Template Modifier</title>
 </head>
 <body>
-    <select name="templates" id="templates"></select>
-    <button id="load-template">Load Template</button>
-    <input type="text" id="html-text">
-    <button id="clipboard">Copy to Clipboard</button>
+    <div class="menu">
+        <i class="fas fa-folder-open"></i>
+        <select name="templates" id="templates"></select>
+        <button id="load-template">Load Template</button>
+        <input type="text" id="html-text">
+        <button id="clipboard">Copy to Clipboard</button>
+    </div>
+
     <div class="template" id="template">
     </div>
+
     <div class="edit-panel" id="edit-panel">
         <div class="text-field" id="text-field">
             <span>Text:</span>

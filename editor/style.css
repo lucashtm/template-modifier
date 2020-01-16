@@ -4,19 +4,55 @@
     -webkit-box-sizing: border-box;
 }
 
+body {
+    background-color: #28272a;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
 html {
     font-family: 'Open Sans', sans-serif;
+    height: 100%;
 }
 
 .template {
-    margin-top: 30px;
-    width: 100%;
+    background-color: white;
+    height: 600px;
+    margin: 100px 200px;
+    border: yellow 1px dotted;
 }
 
 .mutable:hover {
     cursor: pointer;
-    border: lime 5px solid;
+    filter: sepia(1);
     border-radius: 5px;
+}
+
+.menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60px;
+    background-color: #535353;
+}
+
+.select-templates {
+    position: relative;
+}
+
+.custom-select select {
+    display: none;
+}
+
+.menu * {
+    width: 50px;
+    margin: 5px;
 }
 
 .edit-panel {
@@ -27,7 +63,7 @@ html {
     bottom: 0px;
     width: 100%;
     height: 100px;
-    background-color: gray;
+    background-color: #535353;
     padding: 10px;
 }
 
